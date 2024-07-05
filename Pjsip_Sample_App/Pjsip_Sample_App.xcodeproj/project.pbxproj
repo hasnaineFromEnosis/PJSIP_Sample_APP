@@ -300,12 +300,15 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
-					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjlib/include\"",
-					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjsip/include\"",
-					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjlib-util/include\"",
-					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjmedia/include\"",
-					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjnath/include\"",
-					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/third_party/include\"",
+					"\"${SRCROOT}/PjsipLibrary/pjlib/include\"",
+					"\"${SRCROOT}/PjsipLibrary/pjsip/include\"",
+					"\"${SRCROOT}/PjsipLibrary/pjlib-util/include\"",
+					"\"${SRCROOT}/PjsipLibrary/pjmedia/include\"",
+					"\"${SRCROOT}//PjsipLibrary/pjnath/include\"",
+					"\"${SRCROOT}/PjsipLibrary/third_party/include\"",
+					"\"${SRCROOT}/Libraries\"",
+					"\"${SRCROOT}\"",
+					"\"${inherited}\"",
 				);
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -320,6 +323,16 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjlib/lib\"",
+					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjsip/lib\"",
+					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjlib-util/lib\"",
+					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjnath/lib\"",
+					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjmedia/lib\"",
+					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/third_partylib\"",
+					"\"${SRCROOT}/Libraries\"",
+					"\"${SRCROOT}\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.has9Enosis.Pjsip-Sample-App";
@@ -349,12 +362,15 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
-					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjlib/include\"",
-					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjsip/include\"",
-					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjlib-util/include\"",
-					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjmedia/include\"",
-					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjnath/include\"",
-					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/third_party/include\"",
+					"\"${SRCROOT}/PjsipLibrary/pjlib/include\"",
+					"\"${SRCROOT}/PjsipLibrary/pjsip/include\"",
+					"\"${SRCROOT}/PjsipLibrary/pjlib-util/include\"",
+					"\"${SRCROOT}/PjsipLibrary/pjmedia/include\"",
+					"\"${SRCROOT}//PjsipLibrary/pjnath/include\"",
+					"\"${SRCROOT}/PjsipLibrary/third_party/include\"",
+					"\"${SRCROOT}/Libraries\"",
+					"\"${SRCROOT}\"",
+					"\"${inherited}\"",
 				);
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -369,6 +385,16 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjlib/lib\"",
+					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjsip/lib\"",
+					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjlib-util/lib\"",
+					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjnath/lib\"",
+					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/pjmedia/lib\"",
+					"\"${SRCROOT}/Pjsip_Sample_App/PjsipLibrary/third_partylib\"",
+					"\"${SRCROOT}/Libraries\"",
+					"\"${SRCROOT}\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.has9Enosis.Pjsip-Sample-App";
