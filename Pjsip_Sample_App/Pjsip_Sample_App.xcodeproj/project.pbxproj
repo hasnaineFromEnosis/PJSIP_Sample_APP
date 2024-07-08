@@ -13,6 +13,7 @@
 		BA0161CA2C3664DF00D4B525 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0161C92C3664DF00D4B525 /* Preview Assets.xcassets */; };
 		BA0161DC2C37A78D00D4B525 /* wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA0161D82C37A78D00D4B525 /* wrapper.mm */; };
 		BA0161DD2C37A78D00D4B525 /* CustomPJSUA2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA0161DA2C37A78D00D4B525 /* CustomPJSUA2.cpp */; };
+		BA07B5172C3BC9120030F460 /* IncomingCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA07B5162C3BC9120030F460 /* IncomingCallView.swift */; };
 		BA1EAEA02C3826AF005BC502 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1EAE9F2C3826AF005BC502 /* Metal.framework */; };
 		BA1EAEA22C3826BB005BC502 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1EAEA12C3826BB005BC502 /* MetalKit.framework */; };
 		BA1EAEA42C3826D1005BC502 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1EAEA32C3826D1005BC502 /* CoreMedia.framework */; };
@@ -40,6 +41,8 @@
 		BA1EAF042C382859005BC502 /* libpjmedia-audiodev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1EAEF02C382859005BC502 /* libpjmedia-audiodev.a */; };
 		BA1EAF052C382859005BC502 /* libg7221codec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1EAEF12C382859005BC502 /* libg7221codec.a */; };
 		BA1EAF062C382859005BC502 /* libpjmedia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1EAEF22C382859005BC502 /* libpjmedia.a */; };
+		BA1EAF0A2C383BAD005BC502 /* CallingManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EAF092C383BAD005BC502 /* CallingManagers.swift */; };
+		BA1EAF0C2C383E75005BC502 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EAF0B2C383E75005BC502 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,7 @@
 		BA0161D92C37A78D00D4B525 /* CustomPJSUA2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CustomPJSUA2.hpp; sourceTree = "<group>"; };
 		BA0161DA2C37A78D00D4B525 /* CustomPJSUA2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomPJSUA2.cpp; sourceTree = "<group>"; };
 		BA0161DB2C37A78D00D4B525 /* wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wrapper.h; sourceTree = "<group>"; };
+		BA07B5162C3BC9120030F460 /* IncomingCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingCallView.swift; sourceTree = "<group>"; };
 		BA1EAE9F2C3826AF005BC502 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
 		BA1EAEA12C3826BB005BC502 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
 		BA1EAEA32C3826D1005BC502 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
@@ -81,6 +85,8 @@
 		BA1EAEF02C382859005BC502 /* libpjmedia-audiodev.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpjmedia-audiodev.a"; path = "Libraries/libpjmedia-audiodev.a"; sourceTree = "<group>"; };
 		BA1EAEF12C382859005BC502 /* libg7221codec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libg7221codec.a; path = Libraries/libg7221codec.a; sourceTree = "<group>"; };
 		BA1EAEF22C382859005BC502 /* libpjmedia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpjmedia.a; path = Libraries/libpjmedia.a; sourceTree = "<group>"; };
+		BA1EAF092C383BAD005BC502 /* CallingManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingManagers.swift; sourceTree = "<group>"; };
+		BA1EAF0B2C383E75005BC502 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,9 +147,10 @@
 		BA0161C02C3664DE00D4B525 /* Pjsip_Sample_App */ = {
 			isa = PBXGroup;
 			children = (
+				BA1EAF082C383B84005BC502 /* Managers */,
+				BA1EAF072C383B7C005BC502 /* Views */,
 				BA0161DE2C37A79800D4B525 /* Pjsua2 */,
 				BA0161C12C3664DE00D4B525 /* Pjsip_Sample_AppApp.swift */,
-				BA0161C32C3664DE00D4B525 /* ContentView.swift */,
 				BA0161C52C3664DF00D4B525 /* Assets.xcassets */,
 				BA0161C72C3664DF00D4B525 /* Pjsip_Sample_App.entitlements */,
 				BA0161C82C3664DF00D4B525 /* Preview Content */,
@@ -203,6 +210,24 @@
 				BA1EAEEC2C382859005BC502 /* libyuv.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA1EAF072C383B7C005BC502 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA0161C32C3664DE00D4B525 /* ContentView.swift */,
+				BA1EAF0B2C383E75005BC502 /* LoginView.swift */,
+				BA07B5162C3BC9120030F460 /* IncomingCallView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA1EAF082C383B84005BC502 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BA1EAF092C383BAD005BC502 /* CallingManagers.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1EAF0C2C383E75005BC502 /* LoginView.swift in Sources */,
 				BA0161DC2C37A78D00D4B525 /* wrapper.mm in Sources */,
 				BA0161DD2C37A78D00D4B525 /* CustomPJSUA2.cpp in Sources */,
+				BA07B5172C3BC9120030F460 /* IncomingCallView.swift in Sources */,
 				BA0161C42C3664DE00D4B525 /* ContentView.swift in Sources */,
+				BA1EAF0A2C383BAD005BC502 /* CallingManagers.swift in Sources */,
 				BA0161C22C3664DE00D4B525 /* Pjsip_Sample_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +474,7 @@
 					"\"${SRCROOT}/PjsipLibrary/pjlib-util/lib\"",
 					"\"${SRCROOT}/PjsipLibrary/pjnath/lib\"",
 					"\"${SRCROOT}/PjsipLibrary/pjmedia/lib\"",
-					"\"${SRCROOT}/PjsipLibrary/third_partylib\"",
+					"\"${SRCROOT}/PjsipLibrary/third_party/lib\"",
 					"\"${SRCROOT}/Libraries\"",
 					"${SRCROOT}",
 					"$(PROJECT_DIR)/Libraries",
@@ -510,7 +538,7 @@
 					"\"${SRCROOT}/PjsipLibrary/pjlib-util/lib\"",
 					"\"${SRCROOT}/PjsipLibrary/pjnath/lib\"",
 					"\"${SRCROOT}/PjsipLibrary/pjmedia/lib\"",
-					"\"${SRCROOT}/PjsipLibrary/third_partylib\"",
+					"\"${SRCROOT}/PjsipLibrary/third_party/lib\"",
 					"\"${SRCROOT}/Libraries\"",
 					"${SRCROOT}",
 					"$(PROJECT_DIR)/Libraries",
