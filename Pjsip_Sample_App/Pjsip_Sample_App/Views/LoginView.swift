@@ -27,6 +27,15 @@ struct LoginView: View {
                     Text(callingManager.loggedIn ? "Logout" : "Login")
                 }
             }
+            
+            Section("Initiate a Call") {
+                TextField("Number", text: $callingManager.outgoingCallID)
+                Button {
+                    callingManager.logIn()
+                } label: {
+                    Text("Call")
+                }
+            }
         }
         .scrollDismissesKeyboard(.immediately)
         .navigationTitle("PJSIP")

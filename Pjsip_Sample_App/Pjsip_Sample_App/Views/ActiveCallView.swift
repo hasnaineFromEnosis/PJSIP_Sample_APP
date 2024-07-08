@@ -1,5 +1,5 @@
 //
-//  IncomingCallView.swift
+//  ActiveCallView.swift
 //  Pjsip_Sample_App
 //
 //  Created by Shahwat Hasnaine on 7/8/24.
@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-struct IncomingCallView: View {
-    
+struct ActiveCallView: View {
     @ObservedObject var callingManager: CallingManagers = CallingManagers.shared
     
     var body: some View {
@@ -27,9 +26,9 @@ struct IncomingCallView: View {
                 }
                 
                 Button {
-                    callingManager.answerCall()
+                    callingManager.holdCall()
                 } label: {
-                    Text("Answer")
+                    Text(callingManager.isCallOnHold ? "Unhold" : "Hold")
                 }
             }
         }
@@ -37,5 +36,5 @@ struct IncomingCallView: View {
 }
 
 #Preview {
-    IncomingCallView()
+    ActiveCallView()
 }

@@ -12,10 +12,17 @@ struct ContentView: View {
     @ObservedObject var callingManager: CallingManagers = CallingManagers.shared
     var body: some View {
         NavigationStack {
-            LoginView()
+            if callingManager.isCallRunning {
+                ActiveCallView()
+            } else {
+                LoginView()
+            }
         }
         .popover(isPresented: $callingManager.incomingCallComing) {
             IncomingCallView()
+        }
+        .popover(isPresented: $callingManager.outgoingCallGoing) {
+            OutgoingCallView()
         }
     }
 }

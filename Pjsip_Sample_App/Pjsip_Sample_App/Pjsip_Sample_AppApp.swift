@@ -15,7 +15,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         CPPWrapper().createLibWrapper()
 
         //Listen incoming call via function pointer
-        //CPPWrapper().incoming_call_wrapper(incoming_call_swift)
+        CPPWrapper().incoming_call_wrapper(incoming_call_swift)
 
         //Listen incoming call via function pointer
         CPPWrapper().acc_listener_wrapper(acc_listener_swift)
