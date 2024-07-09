@@ -22,7 +22,7 @@ struct LoginView: View {
             
             Section {
                 Button {
-                    callingManager.logIn()
+                    callingManager.loginButtonPressed()
                 } label: {
                     Text(callingManager.loggedIn ? "Logout" : "Login")
                 }
@@ -31,7 +31,7 @@ struct LoginView: View {
             Section("Initiate a Call") {
                 TextField("Number", text: $callingManager.outgoingCallID)
                 Button {
-                    callingManager.logIn()
+                    callingManager.initiateCall()
                 } label: {
                     Text("Call")
                 }

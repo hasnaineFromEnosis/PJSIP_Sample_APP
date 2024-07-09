@@ -457,12 +457,13 @@
 					"\"${SRCROOT}/PjsipLibrary/pjsip/include\"",
 					"\"${SRCROOT}/PjsipLibrary/pjlib-util/include\"",
 					"\"${SRCROOT}/PjsipLibrary/pjmedia/include\"",
-					"\"${SRCROOT}//PjsipLibrary/pjnath/include\"",
+					"\"${SRCROOT}/PjsipLibrary/pjnath/include\"",
 					"\"${SRCROOT}/PjsipLibrary/third_party/include\"",
 					"\"${SRCROOT}/Libraries\"",
 					"\"${SRCROOT}\"",
 					"\"${inherited}\"",
 				);
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need Access for Call";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -521,12 +522,13 @@
 					"\"${SRCROOT}/PjsipLibrary/pjsip/include\"",
 					"\"${SRCROOT}/PjsipLibrary/pjlib-util/include\"",
 					"\"${SRCROOT}/PjsipLibrary/pjmedia/include\"",
-					"\"${SRCROOT}//PjsipLibrary/pjnath/include\"",
+					"\"${SRCROOT}/PjsipLibrary/pjnath/include\"",
 					"\"${SRCROOT}/PjsipLibrary/third_party/include\"",
 					"\"${SRCROOT}/Libraries\"",
 					"\"${SRCROOT}\"",
 					"\"${inherited}\"",
 				);
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need Access for Call";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

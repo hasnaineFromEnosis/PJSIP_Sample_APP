@@ -27,10 +27,16 @@ func incoming_call_swift() {
 }
 
 func call_status_listener_swift ( call_answer_code: Int32) {
-    if (call_answer_code == 0) {
-
-    } else if (call_answer_code == 1) {
-        
+    DispatchQueue.main.async {
+        if (call_answer_code == 0) {
+            CallingManagers.shared.isCallRunning = false
+            CallingManagers.shared.incomingCallComing = false
+            CallingManagers.shared.outgoingCallGoing = false
+        } else if (call_answer_code == 1) {
+            CallingManagers.shared.isCallRunning = true
+            CallingManagers.shared.incomingCallComing = false
+            CallingManagers.shared.outgoingCallGoing = false
+        }
     }
 }
 
@@ -49,12 +55,20 @@ class CallingManagers: ObservableObject {
     @Published var incomingCallComing: Bool = false
     @Published var incomingCallID: String = ""
     
-    @Published var outgoingCallID: String = ""
+    @Published var outgoingCallID: String = "1237731a"
     @Published var outgoingCallGoing: Bool = false
     
     @Published var isCallRunning: Bool = false
     
     @Published var isCallOnHold: Bool = false
+    
+    func loginButtonPressed() {
+        if self.loggedIn {
+            logOut()
+        } else {
+            logIn()
+        }
+    }
     
     func logIn() {
         CPPWrapper().createAccountWrapper(self.userName,
@@ -70,7 +84,7 @@ class CallingManagers: ObservableObject {
     func initiateCall() {
         let fullCallURI: String = "sip:" + outgoingCallID + "@" + domain
         CPPWrapper().outgoingCall(fullCallURI)
-        CPPWrapper().call_listener_wrapper(call_status_listener_swift)
+        self.outgoingCallGoing = true
     }
     
     func answerCall() {
@@ -93,5 +107,7 @@ class CallingManagers: ObservableObject {
     func hangupCall() {
         CPPWrapper().hangupCall()
         self.isCallRunning = false
+        self.incomingCallComing = false
+        self.outgoingCallGoing = false
     }
 }

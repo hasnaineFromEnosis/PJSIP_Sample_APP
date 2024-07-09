@@ -19,6 +19,9 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
         //Listen incoming call via function pointer
         CPPWrapper().acc_listener_wrapper(acc_listener_swift)
+        
+        //Listen incoming & outgoing call status
+        CPPWrapper().call_listener_wrapper(call_status_listener_swift)
 
         //CPPWrapper().update_video_wrapper(update_video_swift)
 

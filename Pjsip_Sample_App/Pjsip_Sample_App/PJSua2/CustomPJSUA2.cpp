@@ -174,7 +174,7 @@ void MyCall::onCallState(OnCallStateParam &prm)
 {
     CallInfo ci = getInfo();
     if (ci.state == PJSIP_INV_STATE_DISCONNECTED) {
-       // callStatusListenerPtr(0);
+        callStatusListenerPtr(0);
         
         /* Delete the call */
         delete call;
@@ -185,7 +185,7 @@ void MyCall::onCallState(OnCallStateParam &prm)
     setCallerId(ci.remoteUri);
     
     if (ci.state == PJSIP_INV_STATE_CONFIRMED) {
-       // callStatusListenerPtr(1);
+        callStatusListenerPtr(1);
     }
     
     //Notify caller ID:
