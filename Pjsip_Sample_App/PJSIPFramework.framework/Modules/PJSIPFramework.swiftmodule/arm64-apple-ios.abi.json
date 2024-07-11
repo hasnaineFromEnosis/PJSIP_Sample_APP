@@ -1,0 +1,473 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PJSIPFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PJSIPLibraryDelegate",
+        "printedName": "PJSIPLibraryDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "incomingCallReceived",
+            "printedName": "incomingCallReceived(callId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PJSIPFramework20PJSIPLibraryDelegateP20incomingCallReceived6callIdySSSg_tF",
+            "mangledName": "$s14PJSIPFramework20PJSIPLibraryDelegateP20incomingCallReceived6callIdySSSg_tF",
+            "moduleName": "PJSIPFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : PJSIPFramework.PJSIPLibraryDelegate>",
+            "sugared_genericSig": "<Self where Self : PJSIPFramework.PJSIPLibraryDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "acccountUpdateReceived",
+            "printedName": "acccountUpdateReceived(status:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PJSIPFramework20PJSIPLibraryDelegateP22acccountUpdateReceived6statusySb_tF",
+            "mangledName": "$s14PJSIPFramework20PJSIPLibraryDelegateP22acccountUpdateReceived6statusySb_tF",
+            "moduleName": "PJSIPFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : PJSIPFramework.PJSIPLibraryDelegate>",
+            "sugared_genericSig": "<Self where Self : PJSIPFramework.PJSIPLibraryDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "callStatusRecieved",
+            "printedName": "callStatusRecieved(status:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PJSIPFramework20PJSIPLibraryDelegateP18callStatusRecieved6statusySi_tF",
+            "mangledName": "$s14PJSIPFramework20PJSIPLibraryDelegateP18callStatusRecieved6statusySi_tF",
+            "moduleName": "PJSIPFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : PJSIPFramework.PJSIPLibraryDelegate>",
+            "sugared_genericSig": "<Self where Self : PJSIPFramework.PJSIPLibraryDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:14PJSIPFramework20PJSIPLibraryDelegateP",
+        "mangledName": "$s14PJSIPFramework20PJSIPLibraryDelegateP",
+        "moduleName": "PJSIPFramework",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PJSIPLibrary",
+        "printedName": "PJSIPLibrary",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PJSIPLibrary",
+                "printedName": "PJSIPFramework.PJSIPLibrary",
+                "usr": "s:14PJSIPFramework12PJSIPLibraryC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PJSIPFramework12PJSIPLibraryCACycfc",
+            "mangledName": "$s14PJSIPFramework12PJSIPLibraryCACycfc",
+            "moduleName": "PJSIPFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any PJSIPFramework.PJSIPLibraryDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PJSIPFramework12PJSIPLibraryC8delegateAA0B8Delegate_pSgvp",
+            "mangledName": "$s14PJSIPFramework12PJSIPLibraryC8delegateAA0B8Delegate_pSgvp",
+            "moduleName": "PJSIPFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any PJSIPFramework.PJSIPLibraryDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PJSIPLibraryDelegate",
+                        "printedName": "any PJSIPFramework.PJSIPLibraryDelegate",
+                        "usr": "s:14PJSIPFramework20PJSIPLibraryDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PJSIPFramework12PJSIPLibraryC8delegateAA0B8Delegate_pSgvg",
+                "mangledName": "$s14PJSIPFramework12PJSIPLibraryC8delegateAA0B8Delegate_pSgvg",
+                "moduleName": "PJSIPFramework",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any PJSIPFramework.PJSIPLibraryDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PJSIPLibraryDelegate",
+                        "printedName": "any PJSIPFramework.PJSIPLibraryDelegate",
+                        "usr": "s:14PJSIPFramework20PJSIPLibraryDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PJSIPFramework12PJSIPLibraryC8delegateAA0B8Delegate_pSgvs",
+                "mangledName": "$s14PJSIPFramework12PJSIPLibraryC8delegateAA0B8Delegate_pSgvs",
+                "moduleName": "PJSIPFramework",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PJSIPFramework12PJSIPLibraryC8delegateAA0B8Delegate_pSgvM",
+                "mangledName": "$s14PJSIPFramework12PJSIPLibraryC8delegateAA0B8Delegate_pSgvM",
+                "moduleName": "PJSIPFramework",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "answerCall",
+            "printedName": "answerCall()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PJSIPFramework12PJSIPLibraryC10answerCallyyF",
+            "mangledName": "$s14PJSIPFramework12PJSIPLibraryC10answerCallyyF",
+            "moduleName": "PJSIPFramework",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hangupCall",
+            "printedName": "hangupCall()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PJSIPFramework12PJSIPLibraryC10hangupCallyyF",
+            "mangledName": "$s14PJSIPFramework12PJSIPLibraryC10hangupCallyyF",
+            "moduleName": "PJSIPFramework",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "holdCall",
+            "printedName": "holdCall()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PJSIPFramework12PJSIPLibraryC8holdCallyyF",
+            "mangledName": "$s14PJSIPFramework12PJSIPLibraryC8holdCallyyF",
+            "moduleName": "PJSIPFramework",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unholdCall",
+            "printedName": "unholdCall()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PJSIPFramework12PJSIPLibraryC10unholdCallyyF",
+            "mangledName": "$s14PJSIPFramework12PJSIPLibraryC10unholdCallyyF",
+            "moduleName": "PJSIPFramework",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getIncomingCallId",
+            "printedName": "getIncomingCallId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PJSIPFramework12PJSIPLibraryC17getIncomingCallIdSSyF",
+            "mangledName": "$s14PJSIPFramework12PJSIPLibraryC17getIncomingCallIdSSyF",
+            "moduleName": "PJSIPFramework",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "call",
+            "printedName": "call(uri:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PJSIPFramework12PJSIPLibraryC4call3uriySS_tF",
+            "mangledName": "$s14PJSIPFramework12PJSIPLibraryC4call3uriySS_tF",
+            "moduleName": "PJSIPFramework",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "login",
+            "printedName": "login(username:password:domain:port:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PJSIPFramework12PJSIPLibraryC5login8username8password6domain4portySS_S3StF",
+            "mangledName": "$s14PJSIPFramework12PJSIPLibraryC5login8username8password6domain4portySS_S3StF",
+            "moduleName": "PJSIPFramework",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logout",
+            "printedName": "logout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PJSIPFramework12PJSIPLibraryC6logoutyyF",
+            "mangledName": "$s14PJSIPFramework12PJSIPLibraryC6logoutyyF",
+            "moduleName": "PJSIPFramework",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "incoming_call_swift",
+            "printedName": "incoming_call_swift()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PJSIPFramework12PJSIPLibraryC19incoming_call_swiftyyF",
+            "mangledName": "$s14PJSIPFramework12PJSIPLibraryC19incoming_call_swiftyyF",
+            "moduleName": "PJSIPFramework",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14PJSIPFramework12PJSIPLibraryC",
+        "mangledName": "$s14PJSIPFramework12PJSIPLibraryC",
+        "moduleName": "PJSIPFramework",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/hasnaine\/Documents\/Project\/iOS\/PJSIPFramework\/PJSIPFramework\/PJSIPLibrary.swift",
+      "kind": "StringLiteral",
+      "offset": 1653,
+      "length": 6,
+      "value": "\"5060\""
+    }
+  ]
+}
