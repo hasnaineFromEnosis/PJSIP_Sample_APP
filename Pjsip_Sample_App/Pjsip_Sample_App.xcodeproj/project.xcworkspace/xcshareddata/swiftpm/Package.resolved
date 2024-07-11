@@ -1,0 +1,15 @@
+{
+  "originHash" : "b052aa51fc035cfbfbd7fa512e4e8fa177faafcd33bd3ca8eda9b50195ae2b81",
+  "pins" : [
+    {
+      "identity" : "pjsiplibrary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hasnaineFromEnosis/PJSIPLibrary.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "411f1514fc497eb0e25c4334edc0ffbb7b7dadf1"
+      }
+    }
+  ],
+  "version" : 3
+}

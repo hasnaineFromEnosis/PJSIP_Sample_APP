@@ -11,8 +11,6 @@
 		BA0161C42C3664DE00D4B525 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0161C32C3664DE00D4B525 /* ContentView.swift */; };
 		BA0161C62C3664DF00D4B525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0161C52C3664DF00D4B525 /* Assets.xcassets */; };
 		BA0161CA2C3664DF00D4B525 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0161C92C3664DF00D4B525 /* Preview Assets.xcassets */; };
-		BA0161DC2C37A78D00D4B525 /* wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA0161D82C37A78D00D4B525 /* wrapper.mm */; };
-		BA0161DD2C37A78D00D4B525 /* CustomPJSUA2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA0161DA2C37A78D00D4B525 /* CustomPJSUA2.cpp */; };
 		BA07B5172C3BC9120030F460 /* IncomingCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA07B5162C3BC9120030F460 /* IncomingCallView.swift */; };
 		BA07B5192C3BF4180030F460 /* OutgoingCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA07B5182C3BF4180030F460 /* OutgoingCallView.swift */; };
 		BA07B51B2C3BF8FA0030F460 /* ActiveCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA07B51A2C3BF8FA0030F460 /* ActiveCallView.swift */; };
@@ -55,10 +53,6 @@
 		BA0161C72C3664DF00D4B525 /* Pjsip_Sample_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pjsip_Sample_App.entitlements; sourceTree = "<group>"; };
 		BA0161C92C3664DF00D4B525 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA0161D72C37A78C00D4B525 /* Pjsip_Sample_App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pjsip_Sample_App-Bridging-Header.h"; sourceTree = "<group>"; };
-		BA0161D82C37A78D00D4B525 /* wrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wrapper.mm; sourceTree = "<group>"; };
-		BA0161D92C37A78D00D4B525 /* CustomPJSUA2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CustomPJSUA2.hpp; sourceTree = "<group>"; };
-		BA0161DA2C37A78D00D4B525 /* CustomPJSUA2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomPJSUA2.cpp; sourceTree = "<group>"; };
-		BA0161DB2C37A78D00D4B525 /* wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wrapper.h; sourceTree = "<group>"; };
 		BA07B5162C3BC9120030F460 /* IncomingCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingCallView.swift; sourceTree = "<group>"; };
 		BA07B5182C3BF4180030F460 /* OutgoingCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutgoingCallView.swift; sourceTree = "<group>"; };
 		BA07B51A2C3BF8FA0030F460 /* ActiveCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveCallView.swift; sourceTree = "<group>"; };
@@ -151,7 +145,6 @@
 		BA0161C02C3664DE00D4B525 /* Pjsip_Sample_App */ = {
 			isa = PBXGroup;
 			children = (
-				BA0161DE2C37A79800D4B525 /* Pjsua2 */,
 				BA1EAF082C383B84005BC502 /* Managers */,
 				BA1EAF072C383B7C005BC502 /* Views */,
 				BA0161C12C3664DE00D4B525 /* Pjsip_Sample_AppApp.swift */,
@@ -169,17 +162,6 @@
 				BA0161C92C3664DF00D4B525 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		BA0161DE2C37A79800D4B525 /* Pjsua2 */ = {
-			isa = PBXGroup;
-			children = (
-				BA0161DA2C37A78D00D4B525 /* CustomPJSUA2.cpp */,
-				BA0161D92C37A78D00D4B525 /* CustomPJSUA2.hpp */,
-				BA0161DB2C37A78D00D4B525 /* wrapper.h */,
-				BA0161D82C37A78D00D4B525 /* wrapper.mm */,
-			);
-			path = Pjsua2;
 			sourceTree = "<group>";
 		};
 		BA1EAE9E2C3826AF005BC502 /* Frameworks */ = {
@@ -281,6 +263,9 @@
 				Base,
 			);
 			mainGroup = BA0161B52C3664DE00D4B525;
+			packageReferences = (
+				BA1462DB2C4073FB0067BF46 /* XCRemoteSwiftPackageReference "PJSIPLibrary" */,
+			);
 			productRefGroup = BA0161BF2C3664DE00D4B525 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -309,8 +294,6 @@
 			files = (
 				BA07B51B2C3BF8FA0030F460 /* ActiveCallView.swift in Sources */,
 				BA1EAF0C2C383E75005BC502 /* LoginView.swift in Sources */,
-				BA0161DC2C37A78D00D4B525 /* wrapper.mm in Sources */,
-				BA0161DD2C37A78D00D4B525 /* CustomPJSUA2.cpp in Sources */,
 				BA07B5172C3BC9120030F460 /* IncomingCallView.swift in Sources */,
 				BA07B5192C3BF4180030F460 /* OutgoingCallView.swift in Sources */,
 				BA0161C42C3664DE00D4B525 /* ContentView.swift in Sources */,
@@ -588,6 +571,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA1462DB2C4073FB0067BF46 /* XCRemoteSwiftPackageReference "PJSIPLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hasnaineFromEnosis/PJSIPLibrary.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = BA0161B62C3664DE00D4B525 /* Project object */;
 }
