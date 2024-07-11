@@ -107,6 +107,7 @@ class CallingManagers: ObservableObject {
     
     func hangupCall() {
         CPPWrapper().hangupCall()
+        self.isCallOnHold = false
         self.isCallRunning = false
         self.incomingCallComing = false
         self.outgoingCallGoing = false
